@@ -2,10 +2,10 @@
 import Foundation
 import UIKit
 
-
-struct TripView {
+struct Trip {
     let name: String
     let destination: String
-    let duration: String
+    let startDate: Date
+    let endDate: Date
 }
 

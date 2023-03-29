@@ -1,30 +1,29 @@
-import Foundation
 import UIKit
 
 class TripViewModel {
     
-    let trip: Trip
+    let tripName: String
+    let tripDestination: String
+    var tripDuration: String
     
     init(trip: Trip) {
-        self.trip = trip
-    }
-    
-    var tripName: String {
-        return trip.name
-    }
-    
-    var tripDestination: String {
-        return trip.destination
-    }
-    
-    var tripDuration: String {
+        self.tripName = trip.name
+        self.tripDestination = trip.destination
+        self.tripDuration = ""
+        
+        let duration = generateRandomDuration()
         let formatter = DateComponentsFormatter()
+        formatter.allowedUnits = [.day]
         formatter.unitsStyle = .full
-        formatter.allowedUnits = [.day, .hour, .minute]
-        formatter.zeroFormattingBehavior = .dropAll
-        let duration = trip.endDate.timeIntervalSince(trip.startDate)
-        return formatter.string(from: duration) ?? "Unknown duration"
+        self.tripDuration = formatter.string(from: duration) ?? "Unknown duration"
     }
+    
+    func generateRandomDuration() -> TimeInterval {
+        let minDuration = 3 * 24 * 60 * 60 // 3 dias em segundos
+        let maxDuration = 30 * 24 * 60 * 60 // 30 dias em segundos
+        let randomDuration = TimeInterval(arc4random_uniform(UInt32(maxDuration - minDuration))) + TimeInterval(minDuration)
+        return randomDuration
+    }
+    
 }
-
 

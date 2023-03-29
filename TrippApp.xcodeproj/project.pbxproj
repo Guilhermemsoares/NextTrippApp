@@ -16,7 +16,7 @@
 		638B86F429D3316800989841 /* TrippAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B86F329D3316800989841 /* TrippAppTests.swift */; };
 		638B86FE29D3316800989841 /* TrippAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B86FD29D3316800989841 /* TrippAppUITests.swift */; };
 		638B870029D3316800989841 /* TrippAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B86FF29D3316800989841 /* TrippAppUITestsLaunchTests.swift */; };
-		638B870D29D3322300989841 /* TripModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B870C29D3322300989841 /* TripModelView.swift */; };
+		638B870D29D3322300989841 /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B870C29D3322300989841 /* TripViewModel.swift */; };
 		638B870F29D3328800989841 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B870E29D3328800989841 /* Trip.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,7 @@
 		638B86F929D3316800989841 /* TrippAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrippAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		638B86FD29D3316800989841 /* TrippAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrippAppUITests.swift; sourceTree = "<group>"; };
 		638B86FF29D3316800989841 /* TrippAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrippAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		638B870C29D3322300989841 /* TripModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModelView.swift; sourceTree = "<group>"; };
+		638B870C29D3322300989841 /* TripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewModel.swift; sourceTree = "<group>"; };
 		638B870E29D3328800989841 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,7 +106,7 @@
 				638B86DC29D3316700989841 /* AppDelegate.swift */,
 				638B86DE29D3316700989841 /* SceneDelegate.swift */,
 				638B86E029D3316700989841 /* ViewController.swift */,
-				638B870C29D3322300989841 /* TripModelView.swift */,
+				638B870C29D3322300989841 /* TripViewModel.swift */,
 				638B870E29D3328800989841 /* Trip.swift */,
 				638B86E229D3316700989841 /* Main.storyboard */,
 				638B86E529D3316800989841 /* Assets.xcassets */,
@@ -266,7 +266,7 @@
 			files = (
 				638B870F29D3328800989841 /* Trip.swift in Sources */,
 				638B86E129D3316700989841 /* ViewController.swift in Sources */,
-				638B870D29D3322300989841 /* TripModelView.swift in Sources */,
+				638B870D29D3322300989841 /* TripViewModel.swift in Sources */,
 				638B86DD29D3316700989841 /* AppDelegate.swift in Sources */,
 				638B86DF29D3316700989841 /* SceneDelegate.swift in Sources */,
 			);
